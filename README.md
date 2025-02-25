@@ -40,7 +40,7 @@ py -m pip install --upgrade pip
 py -m pip install -r requirements.txt
 ```
 
-Note that we do not provide dependencies for the tutorial on distributed workloads as many don't have access to HPC clusters. In case you do, you can also install `dask` and `dask-jobqueue` 
+Note that we do not provide dependencies for the tutorial on distributed workloads as many don't have access to HPC clusters. In case you do, you can also install `dask`, `dask-ml`, and `dask-jobqueue` 
 
 ## R
 Similarly, in R you would need to install a series of packages. You can do that with the following:
