@@ -46,7 +46,8 @@ Note that we do not provide dependencies for the tutorial on distributed workloa
 Similarly, in R you would need to install a series of packages. You can do that with the following:
 
 ```{shell}
-# code here
+source("install_dependencies.R")
+
 ```
 
 Have fun coding!
