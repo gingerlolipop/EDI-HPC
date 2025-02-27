@@ -13,22 +13,18 @@ Ecological Niche Modeling (ENM) is a technique used to project areas suitable fo
 
 This folder is organized as follows:
 
-- **data/**: Contains input datasets
-  - **climate/**: Climate variables and environmental layers
+- **data processed/**: Contains input datasets
+  - **clim data/**: Climate variables and environmental layers
   - **occurrence/**: Species occurrence records
-  - **shapefiles/**: Geographic boundary files
+
 
 - **scripts/**: R scripts for the ENM workflow
-  - **01_data_preparation.R**: Prepare and clean input data
-  - **02_model_building.R**: Build ecological niche models
-  - **03_model_evaluation.R**: Evaluate model performance
-  - **04_visualization.R**: Visualize model outputs and results
+  - **niche_modeling_data_prep.R**: Prepare and clean input data
+  - **niche_modeling_analysis.R**: Build ecological niche models
 
-- **results/**: Model outputs and visualizations
+- **model_outputs/**: Model outputs and visualizations
   - **models/**: Saved model objects
   - **maps/**: Generated distribution maps
-  - **plots/**: Performance charts and plots
-  - **tables/**: Summary statistics and evaluation metrics
 
 ## Usage
 
