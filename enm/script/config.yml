@@ -1,0 +1,42 @@
+# Configuration for niche modeling analysis
+
+# Data periods
+time_periods:
+  normal: "1961_1990"
+  future: "1991_2020"  # Corrected future period
+
+# Species settings
+species:
+  presence_code: "y"
+  absence_code: "n"
+
+# Model parameters
+random_forest:
+  trees: 500
+  mtry: auto  # Will be calculated as sqrt(number of predictors)
+  min_node_size: 5
+  
+# Climate scenario
+future_scenario: "ssp245"  # Shared Socioeconomic Pathway 2-4.5 (middle of the road)
+gcm_ensemble: "8GCMs"      # Using ensemble of 8 Global Climate Models
+
+# File paths are handled by the 'here' package in the R script
+
+# Data paths
+climate_data_path: "data processed"
+climate_pattern: "*.tif"
+
+# Random Forest parameters
+rf_params:
+  trees: 500
+  mtry_range: [3, 10]
+  min_n_range: [2, 10]
+
+# Analysis settings
+projection_year: 2011  # Changed to better represent the middle of the 1991-2020 period
+threshold: 0.7  # Threshold for binary presence/absence
+cv_folds: 5
+
+# Output settings
+output_resolution: 1000  # meters
+save_intermediates: true
