@@ -1,12 +1,31 @@
 # Workshop 2: Machine Learning in Forest Modeling
  
-Welcome to this workshop's repository. Here you'll find the code tutorials we will run during the workshop. For convenience, you can find the actual markdown documents inside the `src` folder, while the `html` folder contains the rendered documents for easier readability.
+Welcome to this workshop's repository. Here you'll find the code tutorials we will run during the workshop.
 
 To get started, clone this repository to your local workstation. You can do that with the following:
 
 ```{shell}
 git clone https://github.com/ttrotto/EDI-HPC.git
 ```
+
+## Content
+The folder structure of this repository is as follows:
+
+```
+.
+├── enm
+│   ├── data processed
+│   ├── data raw
+│   ├── model_outputs
+│   ├── models
+│   └── script
+└── python
+    ├── data
+    ├── html
+    └── img
+```
+
+The `enm` folder contains the R tutorials on Ecological Niche Modeling using supervised learning techniques (available from the `script` folder), while the `python` folder contains the code for the unsupervised learning and distributed computing tutorials. For the Python tutorials, the `html` folder contains the rendered markdowns for easier readability.
 
 ## Python
 
@@ -47,7 +66,6 @@ Similarly, in R you would need to install a series of packages. You can do that 
 
 ```{shell}
 source("install_dependencies.R")
-
 ```
 
 Have fun coding!
