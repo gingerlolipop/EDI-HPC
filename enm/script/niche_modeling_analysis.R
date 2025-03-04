@@ -25,8 +25,8 @@ library(here)          # Path management that works across different computers
 # Define paths using here() to ensure compatibility across different computers
 data_dir <- here("data processed")
 model_dir <- here("models")
-# Update output directory to the requested location
-output_dir <- "C:/Users/jillb/Documents/women workshop/model_outputs"
+# Use relative path for output directory as well
+output_dir <- here("model_outputs")
 
 # Input paths
 occur_climate_path <- here("data processed", "processed_occurrences_Normal_1961_1990SY.csv")
@@ -56,7 +56,7 @@ cat("Output will be saved to:", output_dir, "\n")
 #===============================================================================
 # 1. Import Occurrence + Climate Data -----------------------------------------
 #===============================================================================
-# TUTORIAL NOTE: Species distribution models require two basic inputs:
+# TUTORIAL NOTE: Ecological Niche models require two basic inputs:
 # 1. Species occurrence data (presence/absence or presence-only)
 # 2. Environmental variables (typically climate data)
 #
